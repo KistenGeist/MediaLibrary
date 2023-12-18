@@ -1,13 +1,22 @@
 <main>
-  <a [routerLink]="['/']">
-    <header class="brand-name">
-      <div class="headerContainer">
-        <!--<img class="headerLogo" src="/assets/logo.png" alt="logo" aria-hidden="true" />-->
-        <span class="headerTitle">Dukh Korobki</span>
+  <div class="containerMain">
+    <div class="containerHeader">
+      <header class="brand-name">
+        <div class="headerElements">
+          <!--<img class="headerLogo" src="/assets/logo.png" alt="logo" aria-hidden="true" [routerLink]="['/']"/>-->
+          <span class="headerTitle" [routerLink]="['/']">MediaLibrary</span>
+        </div>
+      </header>
+    </div>
+    <div class="contentContainer">
+      <div class="containerSidebar">
+        <app-sidebar></app-sidebar>
       </div>
-    </header>
-  </a>
-  <section class="content">
-    <router-outlet></router-outlet>
-  </section>
+      <div class="containerApp">    
+        <section class="content">
+          <router-outlet></router-outlet>
+        </section>
+      </div>
+    </div>
+  </div>
 </main>

@@ -3,12 +3,28 @@ $primaryColor: #a58233;
 $accentColor: #cccaab;
 $headerheight: 50px;
 
-.headerContainer{
+main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.containerMain {
+    width: 100%;
+    height: 100%;
+}
+
+.containerHeader {
+    height: $headerheight;
+    width: 100%;
+}
+
+.headerElements{
     display: flex;
     height: $headerheight;
     align-items: flex-end;
     margin-bottom: 10px;
-    background-color: lightblue;
+    background-color: green;
 
     .headerLogo {
         height: 100%;
@@ -20,7 +36,28 @@ $headerheight: 50px;
     }
 }
 
-a {
-    color:$primaryColor;
-    text-decoration: none; /* no underline */
+.contentContainer, .containerSidebar, .containerApp {
+
+}
+
+.contentContainer {
+    width: 100%;
+    height: -webkit-calc(100% - 50px);
+    height:    -moz-calc(100% - 50px);
+    height:         calc(100% - 50px);
+}
+
+.containerSidebar, .containerApp {
+    height: 100%;
+    display: inline-block;
+}
+
+.containerSidebar {
+    width: 10%;
+    background-color: red;
+}
+
+.containerApp {
+    width: 90%;
+    background-color: blue;
 }
