@@ -26,6 +26,14 @@ main {
     margin-bottom: 10px;
     background-color: green;
 
+    .sidebarIcon {
+        border: none;
+        height: 40px;
+        margin: 5px;
+        padding: 0px;
+        width: 40px;
+    }
+
     .headerLogo {
         height: 100%;
         object-fit: cover;
@@ -34,10 +42,6 @@ main {
     .headerTitle {
         font-size: 35px;
     }
-}
-
-.contentContainer, .containerSidebar, .containerApp {
-
 }
 
 .contentContainer {
@@ -53,11 +57,11 @@ main {
 }
 
 .containerSidebar {
-    width: 10%;
+    width: 15%;
     background-color: red;
 }
 
 .containerApp {
-    width: 90%;
+    width: 85%;
     background-color: blue;
 }
